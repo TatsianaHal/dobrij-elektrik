@@ -14,7 +14,7 @@ export class AppComponent implements OnDestroy {
   private destroy$: ReplaySubject<boolean> = new ReplaySubject(1);
 
   constructor(db: AngularFireDatabase) {
-    db.list('/user')
+    db.list('/customers')
       .valueChanges()
       .pipe(takeUntil(this.destroy$))
       .subscribe(user => {

@@ -9,7 +9,7 @@ import { takeUntil } from 'rxjs/operators';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnDestroy {
-  user: any[];
+  customers: any[];
 
   private destroy$: ReplaySubject<boolean> = new ReplaySubject(1);
 
@@ -17,9 +17,9 @@ export class AppComponent implements OnDestroy {
     db.list('/customers')
       .valueChanges()
       .pipe(takeUntil(this.destroy$))
-      .subscribe(user => {
-        this.user = user;
-        console.log('user:', user);
+      .subscribe(customers => {
+        this.customers = customers;
+        console.log('customers:', customers);
       });
   }
 

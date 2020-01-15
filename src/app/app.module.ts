@@ -6,11 +6,10 @@ import { environment } from 'src/environments/environment';
 import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
-import { PresentationComponent } from './components';
 import { PageModule } from './page/page.module';
 
 @NgModule({
-  declarations: [AppComponent, PresentationComponent],
+  declarations: [AppComponent],
   imports: [
     BrowserModule,
     AngularFireModule.initializeApp(environment.firebase),

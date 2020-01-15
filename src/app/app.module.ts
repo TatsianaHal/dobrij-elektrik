@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SharedModule } from './shared/shared.module';
 import { PresentationComponent } from './components';
+import { PageModule } from './page/page.module';
 
 @NgModule({
   declarations: [AppComponent, PresentationComponent],
@@ -16,7 +17,8 @@ import { PresentationComponent } from './components';
     AngularFireDatabaseModule,
     FormsModule,
     ReactiveFormsModule,
-    SharedModule
+    SharedModule,
+    PageModule
   ],
   providers: [],
   bootstrap: [AppComponent]

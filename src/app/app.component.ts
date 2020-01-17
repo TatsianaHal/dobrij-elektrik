@@ -11,6 +11,8 @@ import { takeUntil } from 'rxjs/operators';
 export class AppComponent implements OnDestroy {
   customers: any[];
 
+  title = 'DobrijElektrik';
+
   private destroy$: ReplaySubject<boolean> = new ReplaySubject(1);
 
   // constructor(private db: AngularFireDatabase) {

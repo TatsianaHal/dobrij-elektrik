@@ -17,9 +17,12 @@ module.exports = {
   optimization: {
     minimize: false
   },
+  externals: [/^firebase/],
   output: {
     // Puts the output at the root of the dist folder
     path: path.join(__dirname, 'dist'),
+    library: 'app',
+    libraryTarget: 'umd',
     filename: '[name].js'
   },
   module: {
@@ -30,8 +33,8 @@ module.exports = {
         // Mark files inside `@angular/core` as using SystemJS style dynamic imports.
         // Removing this will cause deprecation warnings to appear.
         test: /(\\|\/)@angular(\\|\/)core(\\|\/).+\.js$/,
-        parser: { system: true },
-      },
+        parser: { system: true }
+      }
     ]
   },
   plugins: [

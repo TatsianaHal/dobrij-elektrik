@@ -12,7 +12,7 @@ import {
   PERFECT_SCROLLBAR_CONFIG,
   PerfectScrollbarConfigInterface
 } from 'ngx-perfect-scrollbar';
-import { MainComponent } from './main/main.component';
+// import { MainComponent } from './main/main.component';
 
 const DEFAULT_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
   suppressScrollX: true
@@ -31,7 +31,9 @@ const config = {
 };
 
 @NgModule({
-  declarations: [AppComponent, MainComponent],
+  // declarations: [AppComponent, MainComponent],
+  declarations: [AppComponent],
+
   imports: [
     AngularFireDatabaseModule,
     FormsModule,

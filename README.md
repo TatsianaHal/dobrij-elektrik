@@ -6,6 +6,12 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 npm run start
 
+## To deploy on Firebase
+
+npm run start
+firebase serve
+firebase deploy
+
 ## To start BACK 1 (Run build SSR)
 
 npm run build:ssr

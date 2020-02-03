@@ -14,8 +14,9 @@
  * from your application's main.server.ts file, as seen below with the
  * import for `ngExpressEngine`.
  */
-(global as any).WeSocket = require('ws');
-(global as any).XMLHttpequest = require('xhr2');
+
+// (global as any).WeSocket = require('ws');
+// (global as any).XMLHttpequest = require('xhr2');
 
 import 'zone.js/dist/zone-node';
 
@@ -64,6 +65,6 @@ app.get('*', (req, res) => {
 });
 
 // Start up the Node server
-// app.listen(PORT, () => {
-//   console.log(`Node Express server listening on http://localhost:${PORT}`);
-// });
+app.listen(PORT, () => {
+  console.log(`Node Express server listening on http://localhost:${PORT}`);
+});

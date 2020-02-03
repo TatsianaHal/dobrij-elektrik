@@ -12,6 +12,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
     ReactiveFormsModule,
     // components:
     ContactFormComponent
-  ]
+  ],
+  providers: []
 })
 export class SharedModule {}
